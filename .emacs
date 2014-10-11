@@ -14,6 +14,7 @@
 
 (global-set-key (kbd "M-`") 'other-window)
  
+; function keys setup
 (global-set-key [f1] 'eshell)
 (global-set-key [f5] 'eval-region)
 
@@ -33,12 +34,18 @@
 ;; (load-theme 'deeper-blue)
 
 
-;; minor modes
+;; minor modes & various options
 (show-paren-mode t)
 (column-number-mode t)
 (global-hl-line-mode t) 
 (blink-cursor-mode 0)
 (icomplete-mode t)
+
+(setq show-paren-style 'expression)
+(setq read-buffer-completion-ignore-case 't)
+(windmove-default-keybindings) ; Shift-<Arrow keys> switch active window
+(setq undo-limit 100000)
+(put 'narrow-to-region  'disabled nil)
 
 
 ;; aliases for useful functions
