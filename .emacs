@@ -30,12 +30,15 @@
 
 
 ;; load-theme
-(load-theme 'deeper-blue)
+;; (load-theme 'deeper-blue)
 
 
 ;; minor modes
 (show-paren-mode t)
 (column-number-mode t)
+(global-hl-line-mode t) 
+(blink-cursor-mode 0)
+(icomplete-mode t)
 
 
 ;; aliases for useful functions
